@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Laboratorio4.Models;
 
-public partial class pago
+public partial class pagos
 {
     public int PagoID { get; set; }
 
@@ -15,5 +15,5 @@ public partial class pago
 
     public string? MetodoPago { get; set; }
 
-    public virtual ordene? Orden { get; set; }
+    public virtual ordenes? Orden { get; set; }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Laboratorio4.Models;
 
-public partial class ordene
+public partial class ordenes
 {
     public int OrdenID { get; set; }
 
@@ -13,9 +13,9 @@ public partial class ordene
 
     public decimal Total { get; set; }
 
-    public virtual cliente? Cliente { get; set; }
+    public virtual clientes? Cliente { get; set; }
 
     public virtual ICollection<detallesorden> detallesordens { get; set; } = new List<detallesorden>();
 
-    public virtual ICollection<pago> pagos { get; set; } = new List<pago>();
+    public virtual ICollection<pagos> pagos { get; set; } = new List<pagos>();
 }

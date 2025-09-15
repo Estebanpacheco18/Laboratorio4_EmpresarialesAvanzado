@@ -15,7 +15,7 @@ public partial class detallesorden
 
     public decimal Precio { get; set; }
 
-    public virtual ordene? Orden { get; set; }
+    public virtual ordenes? Orden { get; set; }
 
-    public virtual producto? Producto { get; set; }
+    public virtual productos? Producto { get; set; }
 }

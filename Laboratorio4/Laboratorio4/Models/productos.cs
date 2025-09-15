@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Laboratorio4.Models;
 
-public partial class producto
+public partial class productos
 {
     public int ProductoID { get; set; }
 
@@ -17,7 +17,7 @@ public partial class producto
 
     public int? CategoriaID { get; set; }
 
-    public virtual categoria? Categoria { get; set; }
+    public virtual categorias? Categoria { get; set; }
 
     public virtual ICollection<detallesorden> detallesordens { get; set; } = new List<detallesorden>();
 }

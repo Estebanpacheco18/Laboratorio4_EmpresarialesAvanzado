@@ -17,17 +17,17 @@ public partial class TiendaDbContext : DbContext
     {
     }
 
-    public virtual DbSet<categoria> categorias { get; set; }
+    public virtual DbSet<categorias> categorias { get; set; }
 
-    public virtual DbSet<cliente> clientes { get; set; }
+    public virtual DbSet<clientes> clientes { get; set; }
 
     public virtual DbSet<detallesorden> detallesordens { get; set; }
 
-    public virtual DbSet<ordene> ordenes { get; set; }
+    public virtual DbSet<ordenes> ordenes { get; set; }
 
-    public virtual DbSet<pago> pagos { get; set; }
+    public virtual DbSet<pagos> pagos { get; set; }
 
-    public virtual DbSet<producto> productos { get; set; }
+    public virtual DbSet<productos> productos { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
@@ -39,14 +39,14 @@ public partial class TiendaDbContext : DbContext
             .UseCollation("utf8mb4_0900_ai_ci")
             .HasCharSet("utf8mb4");
 
-        modelBuilder.Entity<categoria>(entity =>
+        modelBuilder.Entity<categorias>(entity =>
         {
             entity.HasKey(e => e.CategoriaID).HasName("PRIMARY");
 
             entity.Property(e => e.Nombre).HasMaxLength(100);
         });
 
-        modelBuilder.Entity<cliente>(entity =>
+        modelBuilder.Entity<clientes>(entity =>
         {
             entity.HasKey(e => e.ClienteID).HasName("PRIMARY");
 
@@ -78,7 +78,7 @@ public partial class TiendaDbContext : DbContext
                 .HasConstraintName("detallesorden_ibfk_2");
         });
 
-        modelBuilder.Entity<ordene>(entity =>
+        modelBuilder.Entity<ordenes>(entity =>
         {
             entity.HasKey(e => e.OrdenID).HasName("PRIMARY");
 
@@ -94,7 +94,7 @@ public partial class TiendaDbContext : DbContext
                 .HasConstraintName("ordenes_ibfk_1");
         });
 
-        modelBuilder.Entity<pago>(entity =>
+        modelBuilder.Entity<pagos>(entity =>
         {
             entity.HasKey(e => e.PagoID).HasName("PRIMARY");
 
@@ -111,7 +111,7 @@ public partial class TiendaDbContext : DbContext
                 .HasConstraintName("pagos_ibfk_1");
         });
 
-        modelBuilder.Entity<producto>(entity =>
+        modelBuilder.Entity<productos>(entity =>
         {
             entity.HasKey(e => e.ProductoID).HasName("PRIMARY");
 

@@ -129,3 +129,6 @@ D:\CSharp\Laboratorio4_EmpresarialesAvanzado\Laboratorio4\Laboratorio4\obj\Debug
 D:\CSharp\Laboratorio4_EmpresarialesAvanzado\Laboratorio4\Laboratorio4\obj\Debug\net9.0\Laboratorio4.pdb
 D:\CSharp\Laboratorio4_EmpresarialesAvanzado\Laboratorio4\Laboratorio4\obj\Debug\net9.0\Laboratorio4.genruntimeconfig.cache
 D:\CSharp\Laboratorio4_EmpresarialesAvanzado\Laboratorio4\Laboratorio4\obj\Debug\net9.0\ref\Laboratorio4.dll
+D:\CSharp\Laboratorio4_EmpresarialesAvanzado\Laboratorio4\Laboratorio4\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\CSharp\Laboratorio4_EmpresarialesAvanzado\Laboratorio4\Laboratorio4\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\CSharp\Laboratorio4_EmpresarialesAvanzado\Laboratorio4\Laboratorio4\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll

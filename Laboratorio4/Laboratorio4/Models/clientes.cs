@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Laboratorio4.Models;
 
-public partial class cliente
+public partial class clientes
 {
     public int ClienteID { get; set; }
 
@@ -13,5 +13,5 @@ public partial class cliente
 
     public DateTime? FechaCreacion { get; set; }
 
-    public virtual ICollection<ordene> ordenes { get; set; } = new List<ordene>();
+    public virtual ICollection<ordenes> ordenes { get; set; } = new List<ordenes>();
 }
